@@ -206,5 +206,4 @@ if __name__ == "__main__":
     for d in digits:
         if not os.path.exists(str(d)):
             os.mkdir(str(d))
-    app.run()
-
+    app.run(host='0.0.0.0', port=5000)
