@@ -161,7 +161,7 @@ def main():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    model = load_model('modelo_entrenado.h5')
+    model = load_model('../modelo_entrenado.h5')
     try:
         img_data = request.form.get('myImage').replace("data:image/png;base64,", "")
         print()
